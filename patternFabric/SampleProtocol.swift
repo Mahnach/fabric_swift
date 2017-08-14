@@ -7,3 +7,30 @@
 //
 
 import Foundation
+
+protocol SampleProtocol {
+        func getText()
+}
+
+class VkClass: SampleProtocol {
+    func getText(){
+        print("This message send from VK")
+    }
+
+}
+
+class TwitterClass: SampleProtocol {
+    func getText(){
+        print("This message send from Twitter")
+    }
+    
+}
+
+class FacebookClass: SampleProtocol {
+    func getText(){
+        print("This message send from Facebook")
+    }
+    
+}
+
+
